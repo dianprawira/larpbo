@@ -27,7 +27,5 @@ Route::get('kuliah-sore',[KuliahController::class,'kuliahSore']);
 Route::get('kuliah-pagi/{id}',[KuliahController::class,'kuliahPagi']);
 Route::post('kuliah-siang',[KuliahController::class,'kuliahSiang']);
 
-Route::get('taskorigin',[KuliahController::class,'showAllTask']);
-Route::post('inserttask',[KuliahController::class,'insertTask']);
-
-
+Route::get('tasks',[TaskController::class,'showAllTask']);
+Route::post('inserttask',[TaskController::class,'insertTask']);
